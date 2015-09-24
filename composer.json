@@ -1,0 +1,19 @@
+{
+  "name": "light/yii2-funcational",
+  "description": "Yii2 yii2 funcational",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "lichunqiang",
+      "email": "light-li@hotmail.com"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "^2.0"
+  },
+  "autoload": {
+    "files": [
+      "src/functions.php"
+    ]
+  }
+}
