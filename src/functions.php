@@ -114,7 +114,7 @@ if (!function_exists('del_coookie')) {
         $cookies->remove($name, $removeFromBrowser);
     }
 }
-if (!function_exists('_')) {
+if (!function_exists('__')) {
     /**
      * The i18n shorthands
      *
@@ -125,9 +125,9 @@ if (!function_exists('_')) {
      *
      * @return string
      */
-    function _($message, $category = 'app', $params = [], $language = null)
+    function __(, $category,$message, $params = [], $language = null)
     {
-        return \Yii::t($message, $category, $params, $language);
+        return \Yii::t($category, $message, $params, $language);
     }
 }
 if (!function_exists('is_email')) {
