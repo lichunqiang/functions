@@ -1,7 +1,7 @@
 <?php
 /**
  * The shorthand funcations
- * @version 1.0.0
+ * @version 1.0.2
  */
 
 use yii\helpers\Url;
@@ -125,7 +125,7 @@ if (!function_exists('__')) {
      *
      * @return string
      */
-    function __(, $category,$message, $params = [], $language = null)
+    function __($category, $message, $params = [], $language = null)
     {
         return \Yii::t($category, $message, $params, $language);
     }
