@@ -1,7 +1,7 @@
 functions
 ------
 [![version](https://img.shields.io/packagist/v/light/functions.svg?style=flat-square)](https://packagist.org/packages/light/functions)
-[![Download](https://img.shields.io/packagist/dd/light/functions.svg?style=flat-square)](https://packagist.org/packages/light/functions)
+[![Download](https://img.shields.io/packagist/dt/light/functions.svg?style=flat-square)](https://packagist.org/packages/light/functions)
 [![Issues](https://img.shields.io/github/issues/lichunqiang/functions.svg?style=flat-square)](https://github.com/lichunqiang/functions/issues)
 
 Easily using some helpers handsome.
