@@ -1,6 +1,12 @@
 {
   "name": "light/functions",
-  "description": "Yii2 functions",
+  "description": "Yii2 shortcut functions",
+  "keywords": [
+    "Yii2",
+    "helpers",
+    "functional",
+    "shorthand function"
+  ],
   "license": "MIT",
   "authors": [
     {
@@ -18,5 +24,10 @@
     "files": [
       "src/functions.php"
     ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "tests\\": "tests"
+    }
   }
 }

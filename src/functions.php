@@ -8,7 +8,7 @@ use yii\helpers\Url;
 
 if (!function_exists('route')) {
     /**
-     * toRoute shorthands
+     * toRoute shorthands.
      *
      * @param  string|array  $route
      * @param  boolean $scheme
@@ -38,7 +38,7 @@ if (!function_exists('url')) {
 }
 if (!function_exists('session')) {
     /**
-     * get or set the session
+     * get or set the session.
      *
      * @param  string|array $name  If presented array, will set the session
      * @param  mixed $default the default value to return
@@ -66,12 +66,12 @@ if (!function_exists('session')) {
 }
 if (!function_exists('flash')) {
     /**
-     * set session flash
+     * set session flash.
      *
      * @param  string $message
-     * @param  string $type  flash type
+     * @param  string $type flash type
+     * @param bool $removeAfterAccess
      *
-     * @return void
      */
     function flash($message, $type = 'success', $removeAfterAccess = true)
     {
@@ -99,9 +99,9 @@ if (!function_exists('cookie')) {
         return $cookies->getValue($name, $default);
     }
 }
-if (!function_exists('del_coookie')) {
+if (!function_exists('del_cookie')) {
     /**
-     * delete the cookie
+     * delete the cookie.
      *
      * @param  string  $name
      * @param  boolean $removeFromBrowser
@@ -116,7 +116,7 @@ if (!function_exists('del_coookie')) {
 }
 if (!function_exists('__')) {
     /**
-     * The i18n shorthands
+     * The i18n shorthands.
      *
      * @param  string $message
      * @param  string $category
@@ -134,16 +134,17 @@ if (!function_exists('is_email')) {
     /**
      * Validate a string if an email string
      *
-     * @param  string  $string
+     * @param  string $string
+     * @param array $options
      *
-     * @return boolean
+     * @return bool
      */
     function is_email($string, $options = [])
     {
         if (!isset($options['class'])) {
             $options['class'] = 'yii\validators\EmailValidator';
         }
-        $validator = Yii::createObject($options);
+        $validator = \Yii::createObject($options);
 
         return $validator->validate($string);
     }
@@ -153,16 +154,17 @@ if (!function_exists('is_url'))
     /**
      * Validate the string if a valid url.
      *
-     * @param  string  $string
+     * @param  string $string
+     * @param array $options
      *
-     * @return boolean
+     * @return bool
      */
     function is_url($string, $options = [])
     {
         if (!isset($options['class'])) {
             $options['class'] = 'yii\validators\UrlValidator';
         }
-        $validator = Yii::createObject($options);
+        $validator = \Yii::createObject($options);
         return $validator->validate($string);
     }
 }

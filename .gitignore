@@ -1,4 +1,4 @@
+.idea
 vendor
 dev
-composer.lock
-phpunit.xml
+/phpunit.xml
